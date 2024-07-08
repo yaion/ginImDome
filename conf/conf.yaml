@@ -1,0 +1,55 @@
+app:
+  name: ginImDemo
+  port: 8080
+  host: 0.0.0.0
+  debug: debug  # debug, release, test
+log:
+  log_level: debug
+  log_file: /var/log/app.log
+  log_format: '{"time":"%(asctime)s","level":"%(levelname)s","message":"%(message)s"}'
+  log_date_format: '%Y-%m-%d %H:%M:%S'
+  log_max_size: 100
+  log_max_backups: 10
+  log_max_age: 30
+  log_compress: true
+  log_localtime: true
+  log_enable_console: true
+  log_enable_file: true
+  log_enable_rotate: true
+  log_enable_stdout: true
+  log_enable_stderr: true
+  log_enable_json: true
+  log_enable_color: true
+  log_enable_caller: true
+  log_enable_stacktrace: true
+  log_enable_trace: true
+  log_enable_debug: true
+  log_enable_info: true
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: root
+  db: test
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 60
+  conn_max_idle_time: 60
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+  max_idle: 10
+  max_active: 100
+  idle_timeout: 60
+  max_conn_lifetime: 60
+  max_conn_idle_time: 60
+  max_conn_max_lifetime: 60
+  max_conn_max_idle_time: 60
+  max_conn_max_active: 100
+
+
+
+
+
