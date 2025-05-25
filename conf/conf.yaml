@@ -1,6 +1,6 @@
 app:
   name: ginImDemo
-  port: 8080
+  port: 2025
   host: 0.0.0.0
   debug: debug  # debug, release, test
 log:
@@ -26,19 +26,19 @@ log:
   log_enable_debug: true
   log_enable_info: true
 mysql:
-  host: localhost
+  host: 127.0.0.1
   port: 3306
   user: root
-  password: root
-  db: test
+  password: zSpJJ4BhqcucmEF7
+  db: gd_im
   max_idle_conns: 10
   max_open_conns: 100
   conn_max_lifetime: 60
   conn_max_idle_time: 60
 redis:
-  host: localhost
+  host: 127.0.01
   port: 6379
-  password: ""
+  password: 
   db: 0
   max_idle: 10
   max_active: 100

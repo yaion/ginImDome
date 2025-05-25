@@ -1,0 +1,4 @@
+package rabbitmQ
+
+func InitRabbitMQ() {
+}

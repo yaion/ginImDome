@@ -65,7 +65,7 @@ type Config struct {
 	Redis RedisConfig `yaml:"redis"`
 }
 
-func Init() {
+func InitConf() {
 	Conf = new(Config)
 	file, err := os.Open("conf.yaml")
 	defer func(file *os.File) {
